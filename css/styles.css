@@ -56,13 +56,19 @@ display: flex;
 
 .nav-list {
   display: flex;
+  margin-left: auto;
 }
 
-.nav-list>.item+.item {
-  margin-left: 50px;
+
+.nav-list__item{
+  margin-right: 50px;
+}
+.nav-list__item:last-child{
+  margin-right: 0px;
 }
 
-.nav-link {
+
+.nav-list__link{
   position: relative;
   display: block;
   padding-top: 32px;
@@ -75,12 +81,8 @@ display: flex;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current {
-  color: #2196f3;
-}
 
-
-.nav-link::after{
+.nav-list__link::after{
   content: '';
   position: absolute;
   left: 0;
@@ -92,6 +94,15 @@ display: flex;
   background-color:#2196f3;
   opacity: 0 ;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-list__link:hover::after{
+  opacity: 1;
+}
+
+.nav-list__link:hover,
+.nav-list__link:focus {
+  color: #2196f3;
 }
 
 .current::after {
@@ -107,24 +118,27 @@ display: flex;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link:hover::after{
-  opacity: 1;
-}
-
-.nav-link:hover,
-.nav-link:focus {
+.current {
   color: #2196f3;
 }
+
+/**contakts**/
+
 .contact-list {
   display: flex;
   margin-left: auto;
 }
 
-.contact-list>.item+.item {
-  margin-left: 50px;
+.contact-list__item{
+  margin-right: 50px;
 }
 
-.contact {
+.contact-list__item:last-child{
+  margin-right: 0px;
+}
+
+
+.contact-list__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -136,8 +150,8 @@ display: flex;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact:hover,
-.contact:focus {
+.contact-list__link:hover,
+.contact-list__link:focus {
   color: #2196f3;
 }
 .envelope {
