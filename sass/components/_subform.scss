@@ -11,7 +11,7 @@
     letter-spacing: 0.03em;
     margin: 0;
     margin-bottom: 20px;
-    color: #ffffff;
+    color: $title-text-color;
 }
 
 .sub-form {
@@ -24,27 +24,32 @@
     width: 358px;
     background-color: #2F303A;
     border-color: rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
+    border-radius: $main-border-radius;
     padding: 0px 16px;
-    color: #FFFFFF;
+    color: $title-text-color;
 }
 
 .sub-form__button {
     display: flex;
     justify-content: center;
     min-width: 200px;
-    background-color: #2196f3;
-    color: #ffffff;
+    background-color: $background-accent-color;
+    color: $title-text-color;
     font-weight: 700;
     font-size: 16px;
     cursor: pointer;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    border-radius: 4px;
+    border-radius: $main-border-radius;
     margin-left: 12px;
     padding: 10px;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #1976d2;
+    }
 
 }
 

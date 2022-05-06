@@ -12,11 +12,13 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
 }
 
-.team-item:last-child {
-    margin-right: 0px;
-}
+
 
 .team-box {
     padding-top: 30px;
@@ -24,7 +26,7 @@
 }
 
 .team-box__name {
-    color: #212121;
+    color: $first-text-color;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -34,7 +36,7 @@
 }
 
 .team-box__position {
-    color: #757575;
+    color: $second-text-color;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
@@ -42,6 +44,8 @@
     text-align: center;
     margin: 0;
 }
+
+
 
 .sm-box {
     display: flex;
@@ -54,11 +58,12 @@
 
 .sm-box__list {
     margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
 }
 
-.sm-box__list:last-child {
-    margin-right: 0px;
-}
 
 .sm-box__link {
     width: 44px;
@@ -70,18 +75,20 @@
     transition:
         color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $background-accent-color;
+    }
+
 }
 
 .sm-box__icon {
     fill: #AFB1B8;
-}
 
-.sm-box__link:hover,
-.sm-box__link:focus {
-    background-color: #2196f3;
-}
+    .sm-box__link:hover &,
+    .sm-box__link:focus & {
+        fill: #ffffff;
+    }
 
-.sm-box__link:hover .sm-box__icon,
-.sm-box__link:focus .sm-box__icon {
-    fill: #ffffff;
 }
