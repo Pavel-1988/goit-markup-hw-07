@@ -3,36 +3,14 @@
   padding-bottom: 0px;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
-.list-box {
-  display: flex;
-  margin: 0px;
-  padding: 0px;
-}
+
+
 
 .features-item {
   margin-right: 30px;
 }
 
-.item {
-  margin-right: 30px;
-}
-
-.item:last-child {
-  margin-right: 0px;
-}
 
 .features-box {
   width: 270px;

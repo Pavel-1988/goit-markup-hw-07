@@ -12,19 +12,17 @@
     margin-right: 70px;
 }
 
-.logo-bottom {
-    color: $title-text-color;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
+.ftr-logo {
     display: block;
     margin-bottom: 20px;
+
+
+    span {
+        color: $white-text-color;
+    }
 }
 
-.logo-bottom>span {
-    color: $accent-color;
-}
+
 
 .address-list__item {
     margin-bottom: 9px;
@@ -41,7 +39,7 @@ address {
 }
 
 .address-list__link {
-    color: $title-text-color;
+    color: $white-text-color;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
